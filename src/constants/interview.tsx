@@ -16,7 +16,9 @@ import busanoceanSrc from '@/public/images/common/busanocean.png';
 import buyeoSrc from '@/public/images/common/buyeo.png';
 import chuncheonSrc from '@/public/images/common/cc.png';
 import changwonSrc from '@/public/images/common/changwon.png';
+import changwonReparkSrc from '@/public/images/common/changwon-repark.png';
 import cheongyangSrc from '@/public/images/common/cheongyang.png';
+import chungnamEducationSrc from '@/public/images/common/chungnam-education.png';
 import chungnamContentSrc from '@/public/images/common/chungnam-content.png';
 import ckSrc from '@/public/images/common/ck.png';
 import comwelSrc from '@/public/images/common/comwel.png';
@@ -36,6 +38,7 @@ import ekrSrc from '@/public/images/common/ekr.png';
 import ezlSrc from '@/public/images/common/ezl.png';
 import gbSrc from '@/public/images/common/gb.png';
 import genSrc from '@/public/images/common/gen.png';
+import geomdanSrc from '@/public/images/common/geomdan.png';
 import geojeSrc from '@/public/images/common/geoje.png';
 import gongjuSrc from '@/public/images/common/gongju.png';
 import gongyoungHomeSrc from '@/public/images/common/gongyoung-home.png';
@@ -50,11 +53,14 @@ import hanpassSrc from '@/public/images/common/hanpass.png';
 import hcSrc from '@/public/images/common/hc.png';
 import hectoSrc from '@/public/images/common/hecto.png';
 import hscitySrc from '@/public/images/common/hscity.png';
-import incheonWestSrc from '@/public/images/common/incheon-west.png';
+import hongseongSrc from '@/public/images/common/hongseong.png';
 import injeSrc from '@/public/images/common/inje.png';
 import jecheonSrc from '@/public/images/common/jecheon.png';
 import jeonnamFireSrc from '@/public/images/common/jeonnam-fire.png';
+import jeonnamGwangjuSchoolSrc from '@/public/images/common/jeonnam-gwangju-school.png';
+import kepcoKdnSrc from '@/public/images/common/kepco-kdn.png';
 import kepcoSrc from '@/public/images/common/kepco.png';
+import kiboSrc from '@/public/images/common/kibo.png';
 import konyangSrc from '@/public/images/common/konyang.png';
 import koreaLocalSrc from '@/public/images/common/korea-local.png';
 import koreaOceanSrc from '@/public/images/common/korea-ocean.png';
@@ -64,6 +70,7 @@ import nonsanSrc from '@/public/images/common/nonsan.png';
 import novarexSrc from '@/public/images/common/novarex.png';
 import osanSrc from '@/public/images/common/osan.png';
 import pocheonSrc from '@/public/images/common/pocheon.png';
+import pohangCitySrc from '@/public/images/common/pohang-city.png';
 import pohangTechSrc from '@/public/images/common/pohang-tech.png';
 import policeSrc from '@/public/images/common/police.png';
 import poscoSrc from '@/public/images/common/posco.png';
@@ -128,6 +135,7 @@ export const getInterviewlist = async (): Promise<InterviewHistoryData[]> => {
         { img: <Image src={changwonSrc} alt='' width={117} />, text: '창원특례시' },
         { img: <Image src={nonsanSrc} alt='' width={107} />, text: '논산시' },
         { img: <Image src={andongSrc} alt='' width={142} />, text: '안동시' },
+        { img: <Image src={pohangCitySrc} alt='' width={139} />, text: '포항시' },
         { img: <Image src={donghaeSrc} alt='' width={142} />, text: '동해시' },
         { img: <Image src={chuncheonSrc} alt='' width={142} />, text: '춘천시' },
         { img: <Image src={pyeongtaekSrc} alt='' width={57} />, text: '평택시' },
@@ -156,17 +164,20 @@ export const getInterviewlist = async (): Promise<InterviewHistoryData[]> => {
         { img: <Image src={hamanSrc} alt='' width={158} />, text: '함안군' },
         { img: <Image src={taeanSrc} alt='' width={142} />, text: '태안군' },
         { img: <Image src={injeSrc} alt='' width={115} />, text: '인제군' },
+        { img: <Image src={hongseongSrc} alt='' width={145} />, text: '홍성군' },
         { img: <Image src={bonghwaSrc} alt='' width={143} />, text: '봉화군' },
         { img: <Image src={ulsanJungguSrc} alt='' width={170} />, text: '울산광역시 중구' },
-        { img: <Image src={incheonWestSrc} alt='' width={142} />, text: '인천광역시 서구' },
+        { img: <Image src={geomdanSrc} alt='' width={154} />, text: '검단구' },
         { img: <Image src={busanCentralSrc} alt='' width={142} />, text: '부산광역시 중구' },
         { img: <Image src={dipSrc} alt='' width={158} />, text: '대구디지털혁신진흥원' },
         { img: <Image src={chungnamContentSrc} alt='' width={142} />, text: '충남콘텐츠진흥원' },
         { img: <Image src={koreaOceanSrc} alt='' width={142} />, text: '한국해양수산연수원' },
+        { img: <Image src={kepcoKdnSrc} alt='' width={165} />, text: '한전KDN' },
         { img: <Image src={koreaLocalSrc} alt='' width={142} />, text: '한국지역정보개발원' },
         { img: <Image src={yeosuGwangyangSrc} alt='' width={142} />, text: '여수광양항만공사' },
         { img: <Image src={pohangTechSrc} alt='' width={142} />, text: '포항테크노파크' },
         { img: <Image src={ulsanTechSrc} alt='' width={160} />, text: '울산테크노파크' },
+        { img: <Image src={changwonReparkSrc} alt='' width={99} />, text: '창원리포츠파크' },
         { img: <Image src={jeonnamFireSrc} alt='' width={180} />, text: '전남소방본부' },
       ],
     },
@@ -190,12 +201,15 @@ export const getInterviewlist = async (): Promise<InterviewHistoryData[]> => {
         { img: <Image src={hectoSrc} alt='' width={150} />, text: '헥토데이터' },
         { img: <Image src={hanpassSrc} alt='' width={164} />, text: '한패스' },
         { img: <Image src={ezlSrc} alt='' width={100} />, text: 'EZL' },
+        { img: <Image src={kiboSrc} alt='' width={120} />, text: '기술보증기금' },
       ],
     },
     {
       category: t('category.3'),
       data: [
+        { img: <Image src={jeonnamGwangjuSchoolSrc} alt='' width={130} />, text: '전남광주통합특성화교육청' },
         { img: <Image src={genSrc} alt='' width={170} />, text: '광주광역시교육청' },
+        { img: <Image src={chungnamEducationSrc} alt='' width={160} />, text: '충청남도교육청' },
         { img: <Image src={busanUniversitySrc} alt='' width={150} />, text: '부산대학교' },
         { img: <Image src={ysbsUniversitySrc} alt='' width={170} />, text: '양산부산대학교병원' },
         { img: <Image src={konyangSrc} alt='' width={165} />, text: '건양대학교' },
