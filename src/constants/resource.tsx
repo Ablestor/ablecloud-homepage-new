@@ -27,6 +27,8 @@ import ebook_17_Src from '@/public/images/resource/ebook/ebook_17.png';
 import ebook_18_Src from '@/public/images/resource/ebook/ebook_18.png';
 import ebook_19_Src from '@/public/images/resource/ebook/ebook_19.png';
 import ebook_20_Src from '@/public/images/resource/ebook/ebook_20.png';
+import ebook_21_Src from '@/public/images/resource/ebook/ebook_21.png';
+import ebook_22_Src from '@/public/images/resource/ebook/ebook_22.png';
 
 export const resourceType = ['blog', 'video', 'ebook'] as const;
 
@@ -72,7 +74,7 @@ export const videosData: string[] = [
   'https://www.youtube.com/embed/_i0oxkf_ReY',
 ];
 
-export const getEbookData = async () => {
+export const getEbookData = async (): Promise<EbookData[]> => {
   const t = await getTranslations('resources.ebook');
   const locale = await getLocale();
 
@@ -205,6 +207,14 @@ export const getEbookData = async () => {
       href: 'ABLESTACK_NAS_Backup_Solution.pdf',
       date: '2026.08.07',
       imgSrc: locale === 'ko' ? ebook_19_Src : ebook_20_Src,
+    },
+    {
+      type: 'ABLESTACK Technical White Paper',
+      title: t('data.17.title'),
+      description: t('data.17.description'),
+      href: 'ABLESTACK_Veeam_Backup_Solution.pdf',
+      date: '2026.08.14',
+      imgSrc: locale === 'ko' ? ebook_21_Src : ebook_22_Src,
     },
   ];
 };

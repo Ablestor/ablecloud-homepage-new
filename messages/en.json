@@ -876,6 +876,10 @@
         {
           "title": "ABLESTACK for NAS Backup Solution",
           "description": "Integrate with NAS to centrally manage virtual machine backup and recovery through the Mold UI."
+        },
+        {
+          "title": "ABLESTACK for Veeam Backup Solution",
+          "description": "Mold UI allows users to view and restore VM backups created with Veeam."
         }
       ]
     }

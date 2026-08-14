@@ -876,6 +876,10 @@
         {
           "title": "ABLESTACK for NAS 백업 솔루션",
           "description": "NAS와 연동하여 가상머신 백업·복원을 Mold UI에서 통합 관리해보세요."
+        },
+        {
+          "title": "ABLESTACK for Veeam 백업 솔루션",
+          "description": "Veeam 백업에서 수행한 가상머신 백업을 Mold UI에서 조회하고, 복원할 수 있는 기능을 제공합니다."
         }
       ]
     }
