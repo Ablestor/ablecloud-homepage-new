@@ -79,7 +79,7 @@ export function Footer() {
               type='button'
               aria-expanded={isRelatedSitesOpen}
               onClick={() => setIsRelatedSitesOpen(isOpen => !isOpen)}
-              className='flex h-[40px] w-full items-center justify-between rounded-[5px] bg-[#999999] px-[14px] text-left text-sm font-bold tracking-[-0.3px] text-white'>
+              className='flex h-[40px] w-full items-center justify-between rounded-[5px] bg-[#202020] px-[14px] text-left text-sm font-bold tracking-[-0.3px] text-white'>
               <span>ABLESTACK RELATED SITES</span>
               <RelatedSitesArrow
                 className={`h-6 w-6 transition-transform ${isRelatedSitesOpen ? 'rotate-180' : ''}`}
@@ -89,17 +89,17 @@ export function Footer() {
             {isRelatedSitesOpen && (
               <div
                 id='related-sites-menu'
-                className='absolute right-0 top-full z-10 mt-2 flex w-full flex-col rounded-[5px] bg-[#D6D6D6] px-[14px] text-sm font-bold tracking-[-0.3px] text-white'>
+                className='absolute right-0 top-full z-10 flex w-full flex-col rounded-[5px] bg-[#202020]/30 px-[14px] text-sm font-bold tracking-[-0.3px] text-white'>
                 <Link
                   href='https://docs.ablecloud.io/'
                   target='_blank'
-                  className='-mx-[14px] px-[14px] leading-[40px] transition-colors hover:bg-[#AFAFAF]'>
+                  className='-mx-[14px] px-[14px] leading-[40px] transition-colors hover:bg-[#202020]/50'>
                   ABLESTACK DOCUMENT SITE
                 </Link>
                 <Link
                   href='https://partner.ablecloud.io/'
                   target='_blank'
-                  className='-mx-[14px] px-[14px] leading-[40px] transition-colors hover:bg-[#AFAFAF]'>
+                  className='-mx-[14px] px-[14px] leading-[40px] transition-colors hover:bg-[#202020]/50'>
                   ABLECLOUD PARTNER PORTAL
                 </Link>
               </div>
